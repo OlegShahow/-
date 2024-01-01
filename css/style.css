@@ -1,0 +1,22 @@
+@import "/css/reset.css";
+@import "/css/header.css";
+@import "/css/main.css";
+@import "/css/footer.css";
+
+root {
+  /* =============== color fone =================== */
+  --primary-color-fone: rgb(254, 254, 254);
+  --secondary-color-fone: rgb(254, 254, 254);
+  /* =============== color text =================== */
+  --color-h1: white;
+  --color-h2: white;
+  --color-h3: white;
+  /* ================ size text =============== */
+  --font-size-h1: 16px;
+  --font-size-h2: 16px;
+  --font-size-h3: 16px;
+  /* ============== font-family ================== */
+  --prymary-font-family: one;
+  --second-font-family: twoo;
+  --text-font-family: tree;
+}
