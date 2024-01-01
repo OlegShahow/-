@@ -10,13 +10,174 @@ root {
   /* =============== color text =================== */
   --color-h1: white;
   --color-h2: white;
-  --color-h3: white;
+  --color-p: white;
+  /* ========================================== */
+  --font-wiew-regular: 400;
+  --font-wiew-semibold: 600;
+  --font-weight-bold: 700;
   /* ================ size text =============== */
-  --font-size-h1: 16px;
-  --font-size-h2: 16px;
-  --font-size-h3: 16px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-24: 24px;
   /* ============== font-family ================== */
-  --prymary-font-family: one;
-  --second-font-family: twoo;
-  --text-font-family: tree;
+  --prymary-font-family: "Tinos", serif;
+  --second-font-family: "Open Sans", sans-serif;
+  --text-font-family: "Cookie", cursive;
+}
+/* font-family: 'Cookie', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Tinos', serif; */
+
+/* =============================================================== */
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+}
+.header {
+  /* max-width: 1440px;
+  max-height: 800px; */
+  background: url(../img/heroImage.png) center / cover no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  max-width: 1108px;
+  margin: 0 auto;
+}
+/* -----------------------------------------------header__line--------------------------------- */
+.header__line {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-logo {
+  margin-right: 260px;
+}
+
+.header-nav ul {
+  display: flex;
+}
+.header-nav ul li {
+  margin-right: 25px;
+}
+.header-nav a {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-weight: 700;
+  transition: 1s ease;
+}
+
+.header-nav a:hover {
+  color: rgb(205, 44, 44);
+}
+
+.header-korzina {
+  margin-right: 25px;
+}
+.header-line {
+  margin-right: 34px;
+}
+.header-phone {
+  position: relative;
+  min-width: 165px;
+}
+
+.phone-number span {
+  position: absolute;
+  margin-left: 30px;
+  top: 0;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-weight: 700;
+}
+.phone-title p {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 5px 0 0 5px;
+}
+.btn {
+  font-size: 14px;
+  padding: 14px 18px;
+  margin-left: 45px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-weight: 700;
+  background-color: #ff7400;
+  transition: 1s ease;
+}
+.btn:hover {
+  background-color: #793a07;
+  border-radius: 7px;
+}
+/* ---------------------------------header__main------------------------------------- */
+.header__main {
+  max-width: 556px;
+  /* border: 1px solid white; */
+  text-align: center;
+  margin-top: 160px;
+}
+
+.main-title {
+  font-size: 50px;
+  font-weight: 400;
+  font-family: "Tinos", serif;
+  color: #d67e35;
+}
+.main-title-big {
+  font-size: 80px;
+  font-weight: 400;
+  font-family: "Tinos", serif;
+  color: #d67e35;
+}
+.main-text {
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  margin: 12px 0 21px 0;
+  /* text-align:none; */
+}
+
+.main-text p::after {
+  position: absolute;
+  content: "";
+  background: white;
+  width: 61px;
+  height: 2px;
+top: 12px;
+margin-left: 10px;
+}
+.main-text p::before {
+  position: absolute;
+  content: "";
+  background: white;
+  width: 61px;
+  height: 2px;
+  top: 12px;
+left: 123px;
+}
+
+
+.main-btn {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  background-color: #ff7400;
+  padding: 14px 28px;
+  transition: 1s ease;
+}
+.main-btn:hover{
+  background-color: #793a07;
+  border-radius: 7px;
 }
