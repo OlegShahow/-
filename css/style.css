@@ -1,7 +1,7 @@
-@import "/css/reset.css";
+/* @import "/css/reset.css";
 @import "/css/header.css";
 @import "/css/main.css";
-@import "/css/footer.css";
+@import "/css/footer.css"; */
 
 root {
   /* =============== color fone =================== */
@@ -41,7 +41,7 @@ body {
   max-height: 800px; */
   background: url(../img/heroImage.png) center / cover no-repeat;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 .container {
   max-width: 1108px;
@@ -154,8 +154,8 @@ body {
   background: white;
   width: 61px;
   height: 2px;
-top: 12px;
-margin-left: 10px;
+  top: 12px;
+  margin-left: 10px;
 }
 .main-text p::before {
   position: absolute;
@@ -164,9 +164,8 @@ margin-left: 10px;
   width: 61px;
   height: 2px;
   top: 12px;
-left: 123px;
+  left: 123px;
 }
-
 
 .main-btn {
   font-size: 14px;
@@ -176,8 +175,51 @@ left: 123px;
   background-color: #ff7400;
   padding: 14px 28px;
   transition: 1s ease;
+  margin-bottom: 230px;
 }
-.main-btn:hover{
+.main-btn:hover {
   background-color: #793a07;
   border-radius: 7px;
+}
+/*------------------------  CARDS ------------------------- */
+.cards {
+  /* margin-bottom: 150px; */
+}
+.container {
+}
+.cards__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.card {
+  position: relative;
+  margin-top: -80px;
+  z-index: 10;
+  background: white;
+  flex: 0 1 349px;
+  text-align: center;
+  box-shadow: 10px 10px 40px 10px #0000002f;
+  margin-bottom: 150px;
+}
+.card-icon {
+  margin: 48px 0 4px 0;
+}
+.card-title {
+  margin-bottom: 20px;
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  font-size: 26px;
+  color: #2c2c2c;
+}
+.card-title span {
+  color: #bc9060;
+}
+.card-text {
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  font-size: 26px;
+  color: #656363;
+  margin-bottom: 20px;
 }
