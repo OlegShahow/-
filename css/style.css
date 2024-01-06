@@ -3,14 +3,15 @@
 @import "/css/main.css";
 @import "/css/footer.css"; */
 
-root {
+:root {
   /* =============== color fone =================== */
-  --primary-color-fone: rgb(254, 254, 254);
+  --primary-color-fone: white;
   --secondary-color-fone: rgb(254, 254, 254);
   /* =============== color text =================== */
-  --color-h1: white;
-  --color-h2: white;
-  --color-p: white;
+  --color-primary-white: white;
+  --color-h1-big: #d67e34;
+  --color-span-number: #bc9060;
+  --color-bg-button: #ff7400;
   /* ========================================== */
   --font-wiew-regular: 400;
   --font-wiew-semibold: 600;
@@ -44,7 +45,8 @@ body {
   height: 100%;
 }
 .container {
-  max-width: 1108px;
+  max-width: 1128px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 /* -----------------------------------------------header__line--------------------------------- */
@@ -66,9 +68,9 @@ body {
 }
 .header-nav a {
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
-  color: white;
-  font-weight: 700;
+  font-family: var(--second-font-family);
+  color: var(--color-primary-white);
+  font-weight: var(--font-weight-bold);
   transition: 1s ease;
 }
 
@@ -92,15 +94,15 @@ body {
   margin-left: 30px;
   top: 0;
   font-size: 18px;
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--second-font-family);
   color: white;
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
 }
 .phone-title p {
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
-  color: white;
-  font-weight: 400;
+  font-family: var(--second-font-family);
+  color: var(--color-primary-white);
+  font-weight: var(--font-wiew-regular);
   line-height: 1.4;
   margin: 5px 0 0 5px;
 }
@@ -108,10 +110,10 @@ body {
   font-size: 14px;
   padding: 14px 18px;
   margin-left: 45px;
-  font-family: "Open Sans", sans-serif;
-  color: white;
-  font-weight: 700;
-  background-color: #ff7400;
+  font-family: var(--second-font-family);
+  color: var(--color-primary-white);
+  font-weight: var(--font-weight-bold);
+  background-color: var(--color-bg-button);
   transition: 1s ease;
 }
 .btn:hover {
@@ -128,22 +130,22 @@ body {
 
 .main-title {
   font-size: 50px;
-  font-weight: 400;
-  font-family: "Tinos", serif;
-  color: #d67e35;
+  font-weight: var(--font-wiew-regular);
+  font-family: var(--prymary-font-family);
+  color: var(--color-h1-big);
 }
 .main-title-big {
   font-size: 80px;
   font-weight: 400;
-  font-family: "Tinos", serif;
-  color: #d67e35;
+  font-family: var(--prymary-font-family);
+  color: var(--color-h1-big);
 }
 .main-text {
   position: relative;
   font-size: 18px;
-  font-weight: 400;
-  font-family: "Open Sans", sans-serif;
-  color: white;
+  font-weight: var(--font-wiew-regular);
+  font-family: var(--second-font-family);
+  color: var(--color-primary-white);
   margin: 12px 0 21px 0;
   /* text-align:none; */
 }
@@ -151,7 +153,7 @@ body {
 .main-text p::after {
   position: absolute;
   content: "";
-  background: white;
+  background: var(--primary-color-fone);
   width: 61px;
   height: 2px;
   top: 12px;
@@ -160,7 +162,7 @@ body {
 .main-text p::before {
   position: absolute;
   content: "";
-  background: white;
+  background: var(--primary-color-fone);
   width: 61px;
   height: 2px;
   top: 12px;
@@ -169,10 +171,10 @@ body {
 
 .main-btn {
   font-size: 14px;
-  font-weight: 700;
-  font-family: "Open Sans", sans-serif;
-  color: white;
-  background-color: #ff7400;
+  font-weight: var(--font-weight-bold);
+  font-family: var(--second-font-family);
+  color: var(--color-primary-white);
+  background-color: var(--color-bg-button);
   padding: 14px 28px;
   transition: 1s ease;
   margin-bottom: 230px;
@@ -197,7 +199,7 @@ body {
   position: relative;
   margin-top: -80px;
   z-index: 10;
-  background: white;
+  background: var(--primary-color-fone);
   flex: 0 1 349px;
   text-align: center;
   box-shadow: 10px 10px 40px 10px #0000002f;
@@ -208,18 +210,112 @@ body {
 }
 .card-title {
   margin-bottom: 20px;
-  font-family: "Tinos", serif;
-  font-weight: 400;
+  font-family: var(--prymary-font-family);
+  font-weight: var(--font-wiew-regular);
   font-size: 26px;
   color: #2c2c2c;
 }
 .card-title span {
-  color: #bc9060;
+  color: var(--color-span-number);
 }
 .card-text {
-  font-family: "Tinos", serif;
-  font-weight: 400;
+  font-family: var(--prymary-font-family);
+  font-weight: var(--font-wiew-regular);
   font-size: 26px;
   color: #656363;
   margin-bottom: 20px;
+}
+/* ------------------------ main-story  ------------------------------ */
+.main {
+}
+.main__story {
+}
+.container {
+}
+.story-row {
+  display: flex;
+  justify-content: space-between;
+}
+.story-info {
+  max-width: 444px;
+  text-align: center;
+}
+.story-info-title {
+  margin: 16px 0;
+}
+.story-info-title p {
+  font-size: 54px;
+  font-weight: var(--font-wiew-regular);
+  font-family: var(--prymary-font-family);
+}
+.story-info-title span {
+  color: var(--color-span-number);
+}
+.story-info-text {
+  font-size: 16px;
+  font-family: var(--second-font-family);
+  font-weight: var(--font-wiew-regular);
+  margin-bottom: 90px;
+}
+.story-info-number {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.number span {
+  font-weight: var(--font-wiew-regular);
+  color: var(--color-span-number);
+  font-size: 40px;
+}
+.number h3 {
+  font-weight: var(--font-wiew-regular);
+  font-size: 20px;
+  color: black;
+}
+.story-img {
+}
+.story-bg {
+  background: url(../img/bg.png) center / cover no-repeat;
+  margin: 122px 0 132px 0;
+  padding: 80px 0 140px 0;
+}
+.story-bg-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.story-bg-info{
+max-width: 601px;
+}
+.story-bg-info p {
+  font-size: 52px;
+  font-weight: var(--font-wiew-regular);
+  font-family: var(--prymary-font-family);
+  color: var(--color-h1-big);
+  margin-bottom: 20px;
+}
+
+.story-bg-info h2 {
+  font-size: 24px;
+  font-weight: var(--font-weight-bold);
+  font-family: var(--second-font-family);
+  color: var(--color-primary-white);
+}
+.story-bg-button{
+
+}
+.story-bg-button button {
+  background: var(--color-bg-button);
+  font-size: 14px;
+  padding: 14px 18px;
+  font-family: var(--second-font-family);
+  color: var(--color-primary-white);
+  font-weight: var(--font-weight-bold);
+  background-color: var(--color-bg-button);
+  transition: 1s ease;
+}
+.story-bg-button button:hover {
+  background-color: #793a07;
+  border-radius: 7px;
 }
