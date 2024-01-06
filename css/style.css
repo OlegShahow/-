@@ -273,6 +273,7 @@ body {
   color: black;
 }
 .story-img {
+  display: none;
 }
 .story-bg {
   background: url(../img/bg.png) center / cover no-repeat;
@@ -285,8 +286,8 @@ body {
   justify-content: space-between;
 }
 
-.story-bg-info{
-max-width: 601px;
+.story-bg-info {
+  max-width: 601px;
 }
 .story-bg-info p {
   font-size: 52px;
@@ -302,8 +303,7 @@ max-width: 601px;
   font-family: var(--second-font-family);
   color: var(--color-primary-white);
 }
-.story-bg-button{
-
+.story-bg-button {
 }
 .story-bg-button button {
   background: var(--color-bg-button);
@@ -318,4 +318,38 @@ max-width: 601px;
 .story-bg-button button:hover {
   background-color: #793a07;
   border-radius: 7px;
+}
+
+/* ====================   ПРОБНЫЙ БЛОК КАРТИНОК ============================ */
+
+.story-imgings {
+  max-width: 539px;
+  max-height: 498px;
+  overflow: hidden;
+  /* background: #d67e34; */
+}
+.one,
+.twoo,
+.three,
+.four {
+  position:relative;
+}
+.one{
+  left: -10px;
+  top: 40px;
+  z-index: 5;
+}
+.twoo {
+  left: 280px;
+top: -170px;
+  z-index: 5;
+}
+.three {
+left: -100px;
+  top: -365px;
+  z-index: 4;
+}
+.four {
+  left:250px;
+  top: -765px;
 }
