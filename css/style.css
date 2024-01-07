@@ -401,3 +401,87 @@ body {
   color: black;
   margin-left: 30px;
 }
+
+/* ========================================    MAIN - MENU  =============================== */
+
+.main__menu {
+ /* min-height: 100%; */
+  background: url(../img/fone2.png) center / cover no-repeat;
+  padding: 100px 0 226px 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main__menu-title {
+  text-align: center;
+  font-family: var(--prymary-font-family);
+  font-weight: var(--font-wiew-regular);
+  color: var(--color-primary-white);
+  font-size: 54px;
+  margin-bottom: 138px;
+}
+.main__menu-cards {
+  max-width: 1128px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu-card {
+  text-align: center;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 62px 28px 62px;
+}
+.m-c-img {
+  border-radius: 50%;
+  min-width: 225px;
+  min-height: 225px;
+
+  background: url(../img/abstract.png) center / cover no-repeat;
+}
+.price {
+  position: relative;
+  top: 140px;
+  left: 140px;
+  max-width: 90px;
+  max-height: 90px;
+  font-family: var(--text-font-family);
+  font-weight: var(--font-wiew-regular);
+  color: rgb(247, 243, 243);
+  font-size: 30px;
+  padding: 31px;
+  border: 5px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #d67e34;
+}
+.m-c-title {
+  font-family: var(--prymary-font-family);
+  font-weight: var(--font-wiew-regular);
+  color: black;
+  font-size: 26px;
+  margin: 22px 0 18px 0;
+}
+.m-c-text {
+  font-family: var(--second-font-family);
+  font-weight: var(--font-wiew-regular);
+  color: black;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.m-c-button button {
+  font-family: var(--second-font-family);
+  font-weight: var(--font-wiew-regular);
+  color: var(--color-primary-white);
+  font-size: 16px;
+  background-color: var(--color-bg-button);
+  padding: 14px 28px;
+  transition: 1s ease;
+}
+
+.m-c-button button:hover {
+  background-color: #793a07;
+  border-radius: 7px;
+}
