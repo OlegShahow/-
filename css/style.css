@@ -332,24 +332,72 @@ body {
 .twoo,
 .three,
 .four {
-  position:relative;
+  position: relative;
 }
-.one{
+.one {
   left: -10px;
   top: 40px;
   z-index: 5;
 }
 .twoo {
   left: 280px;
-top: -170px;
+  top: -170px;
   z-index: 5;
 }
 .three {
-left: -100px;
+  left: -100px;
   top: -365px;
   z-index: 4;
 }
 .four {
-  left:250px;
+  left: 250px;
   top: -765px;
+}
+
+/* ===========================================    main__offers   BLUDA ================================= */
+
+.main__offers {
+  padding-bottom: 150px;
+}
+.offers-title {
+  text-align: center;
+  margin-bottom: 140px;
+}
+.offers-title p {
+  font-size: 54px;
+  font-weight: var(--font-wiew-regular);
+  font-family: var(--prymary-font-family);
+  color: black;
+}
+.offers-title span {
+  font-size: 54px;
+  font-weight: var(--font-wiew-regular);
+  font-family: var(--prymary-font-family);
+  color: var(--color-h1-big);
+}
+.offers-body {
+  display: flex;
+  justify-content: space-between;
+}
+.offers-body-img {
+}
+.offers-body-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+.offers-menu {
+  display: flex;
+  column-gap: 29px;
+}
+.off-menu-img {
+  display: flex;
+  align-items: center;
+}
+.off-menu-text {
+  font-size: 26px;
+  font-weight: var(--font-wiew-regular);
+  font-family: var(--prymary-font-family);
+  color: black;
+  margin-left: 30px;
 }
