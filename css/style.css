@@ -510,6 +510,7 @@ body {
 .slider__prev ,.slider__next{
   position: absolute;
   top:50%;
+  z-index: 10;
 }
 .slider__prev {
   left:20vh;
