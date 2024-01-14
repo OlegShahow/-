@@ -54,3 +54,49 @@ function init() {
 AOS.init({
     once:true
  });
+
+//  ============================   sliderBig  =============================
+const sliderSes = document.querySelector(".sliderses");
+const sliderLines = document.querySelector(".slider-line");
+const sliderImages = document.querySelectorAll(".slider-area-card");
+
+const nextt = document.querySelector(".slider__ne");
+const prevv = document.querySelector(".slider__pr");
+
+let countt = 0;
+let widthh = sliderSes.offsetWidth;
+
+// чтобы не было в конце пробела и слайдер был заполнен(картинкам их ширину)
+function init() {
+  sliderImages.forEach((item) => {
+    item.style.width = widthh + "px";
+    item.style.height = "auto";
+  });
+}
+
+// window.addEventListener(init); НЕ НАДО !!!!! ЕСТЬ ВЫШЕ ПРАВИЛО РАБОТАЕТ
+// window.addEventListener(rollSlider); прочитать ошибку !!!!
+
+function rollSlider() {
+  sliderLines.style.transform = `translateX(${-countt * widthh}px)`;
+}
+
+function nextSlider() {
+  countt++;
+  if (countt >= sliderImages.length) {
+    
+    countt = 0;
+  }
+  rollSlider();
+}
+
+nextt.addEventListener("click", nextSlider);
+
+function prevSlider() {
+  countt--;
+  if (countt < 0) {
+    countt = sliderImages.length - 1 ;
+  }
+  rollSlider();
+}
+prevv.addEventListener("click", prevSlider);

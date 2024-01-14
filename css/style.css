@@ -522,20 +522,24 @@ body {
 }
 
 /* =================================================================================== */
-
 .main__big-slider {
+  background: #e5e5e5;
+}
+.main__big-slider .container {
+  overflow: hidden;
+  /* border: 1px solid black; */
   position: relative;
   background: #e5e5e5;
 }
-.big-slider-area {
-  border: 1px solid black;
+.slider-line {
   margin: 0 auto;
   max-width: 920px;
   display: flex;
-  overflow: hidden;
   text-align: center;
+  transition: all ease 1s;
 }
 .slider-area-card {
+  margin-right: 190px;
   min-width: 920px;
   padding: 106px 0 140px 0;
 }
@@ -565,20 +569,78 @@ body {
   font-size: 20px;
 }
 .slider-area-point {
-  display: flex;
   position: absolute;
-  top: 90%;
-  left: 47.5%;
+  top: 85%;
+  left: 45%;
+}
+.slider__pr,
+.slider__ne {
+  /* width: 50px; */
+  text-transform: uppercase;
+  font-family: var(--second-font-family);
+  font-weight: var(--font-weight-bold);
+  border-radius: 20px;
+  padding: 10px;
+  color: var(--color-primary-white);
+  background-color: var(--color-bg-button);
+}
+.slider__pr:hover,
+.slider__ne:hover {
+  background: #e2975a;
 }
 
-.point {
-  width: 18px;
-  height: 15px;
-  margin-right: 19px;
-  background: rgb(65, 20, 99);
-  border-radius: 100px;
-  cursor: pointer;
+/* =============================================    food    */
+
+.main__food {
+  text-align: center;
 }
-.point:hover {
-  background: rgb(83, 51, 196);
+
+.food-title p{
+  margin: 100px 0 60px 0;
+  font-size: 54px;
+  font-weight: var(--font-wiew-regular);
+  font-family: var(--prymary-font-family);
+}
+
+.food-title span{
+  color: var(--color-span-number); 
+}
+.food-galery {
+  display: flex;
+  justify-content: space-between;
+}
+.food-galery-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 28px;
+
+}
+.food-galery-block img{
+/* flex: 0 1 auto; */
+}
+
+/* ===============================================    cheff   =============================== */
+
+.cheff-img {
+display: flex;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+.cheff-title p{
+  margin: 100px auto;
+  font-size: 54px;
+  font-weight: var(--font-wiew-regular);
+  font-family: var(--prymary-font-family);
+}
+.cheff-title span{
+  color: var(--color-span-number);
+}
+/* ================================= footer   ========================= */
+.footer{
+  min-width: 1440px;
+  height: 720px;
+background: url(../img/MAKE\ A\ RESERVATION.png)center /cover no-repeat;
+/* background-size: auto auto; */
+/* background-position: ; */
 }
