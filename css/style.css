@@ -46,7 +46,9 @@ body {
   /* класс для бургер-меню */
   display: none;
 }
-
+#button {
+  display: none;
+}
 .container {
   max-width: 1128px;
   padding: 0 10px;
@@ -187,7 +189,18 @@ body {
   border-radius: 7px;
 }
 /* ....................................................................................... */
-
+@media (max-width: 1141px) {
+  .header__line {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-logo {
+    width: 60px;
+    margin-right: 0;
+  }
+}
 @media (max-width: 600px) {
   .main-text p::after,
   .main-text p::before {
@@ -208,7 +221,6 @@ body {
     position: absolute;
     top: 5%;
     left: 10%;
-    width: 60px;
   }
 
   .burger,
@@ -233,6 +245,7 @@ body {
   }
 
   #button {
+    display: block;
     position: absolute;
     right: 10%;
   }
@@ -431,10 +444,24 @@ body {
 }
 
 /* ........................................................................................... */
+
+@media (max-width: 1010px) {
+  .story-imgings {
+    display: none;
+  }
+  .story-img {
+    display: block;
+  }
+  .story-info-title {
+    /* margin: 0 auto; */
+  }
+}
+
 @media (max-width: 600px) {
   .story-row {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
   }
   .story-info-title br {
     display: block;
@@ -452,7 +479,6 @@ body {
   }
   .story-img {
     margin-top: 45px;
-    display: block;
   }
   .story-imgings {
     display: none;
@@ -526,11 +552,27 @@ body {
 }
 
 /* ........................................................................................... */
+
+@media (max-width: 1130px) {
+  .off-menu-text span {
+    display: none;
+  }
+}
+@media (max-width: 969px) {
+  .offers-body {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
 @media (max-width: 600px) {
   .main__offers br {
     display: block;
   }
-
+  .offers-title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
   .offers-title p,
   .offers-title span {
     font-size: 40px;
@@ -656,6 +698,13 @@ body {
 .slider__next {
   right: 20vh;
 }
+/* ......................................................................................... */
+@media (max-width: 1261px) {
+  .slider {
+    max-width: 740px;
+    margin: 0 auto;
+  }
+}
 
 /* =================================================================================== */
 .main__big-slider {
@@ -774,6 +823,20 @@ body {
 .cheff-title span {
   color: var(--color-span-number);
 }
+/* .............................................................................................. */
+@media (max-width: 1130px) {
+  .main__cheff {
+    margin: 0 auto;
+  }
+  .cheff-img,
+  .cheff-title {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
 /* ================================= footer   ========================= */
 .footer {
   min-width: 1440px;

@@ -74,28 +74,28 @@ function init() {
 // window.addEventListener(init); НЕ НАДО !!!!! ЕСТЬ ВЫШЕ ПРАВИЛО РАБОТАЕТ
 // window.addEventListener(rollSlider); прочитать ошибку !!!!
 
-function rollSlider() {
+function rollSliderES() {
   sliderLines.style.transform = `translateX(${-countt * widthh}px)`;
 }
 
-function nextSlider() {
+function nextSliderEs() {
   countt++;
   if (countt >= sliderImages.length) {
     countt = 0;
   }
-  rollSlider();
+  rollSliderES();
 }
 
-nextt.addEventListener("click", nextSlider);
+nextt.addEventListener("click",  nextSliderEs);
 
-function prevSlider() {
+function prevSliderEs() {
   countt--;
   if (countt < 0) {
     countt = sliderImages.length - 1;
   }
-  rollSlider();
+  rollSlideES();
 }
-prevv.addEventListener("click", prevSlider);
+prevv.addEventListener("click",prevSliderEs);
 
 // =============================   BURGER  ===================================
 
