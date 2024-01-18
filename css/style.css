@@ -42,6 +42,11 @@ body {
   width: 100%;
   height: 100%;
 }
+.display {
+  /* класс для бургер-меню */
+  display: none;
+}
+
 .container {
   max-width: 1128px;
   padding: 0 10px;
@@ -198,7 +203,47 @@ body {
     font-size: 15px;
   }
 }
+@media (max-width: 769px) {
+  .header-logo {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 60px;
+  }
 
+  .burger,
+  .burger-slide a {
+    display: block;
+  }
+  .burger-slide a {
+    color: white;
+    font-size: 50px;
+    line-height: 2;
+  }
+  .burger-slide {
+    text-align: center;
+    position: absolute;
+    /* right: 50%; */
+    top: 13%;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid white; */
+    background: rgb(0, 0, 0);
+    z-index: 100;
+  }
+
+  #button {
+    position: absolute;
+    right: 10%;
+  }
+  .header-nav,
+  .header-korzina,
+  .header-line,
+  .header-phone,
+  .header-button {
+    display: none;
+  }
+}
 /* ============================================================================================================== */
 
 /*------------------------  CARDS ------------------------- */
@@ -486,10 +531,10 @@ body {
     display: block;
   }
 
-  .offers-title p ,.offers-title span{
+  .offers-title p,
+  .offers-title span {
     font-size: 40px;
   }
-
 }
 
 /* ========================================================================================================================= */
