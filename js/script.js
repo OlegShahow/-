@@ -93,7 +93,7 @@ function prevSliderEs() {
   if (countt < 0) {
     countt = sliderImages.length - 1;
   }
-  rollSlideES();
+  rollSliderES();
 }
 prevv.addEventListener("click",prevSliderEs);
 
